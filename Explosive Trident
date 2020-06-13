@@ -1,1 +1,21 @@
+var itemid = 1;
+var amount = 1;
 
+function procCmd(command) {
+	var cmd = command.split(" ");
+	if (cmd[0] == "hi") {
+		clientMessage ("hello")
+		}
+		if (cmd[0] == "hello") {
+			clientMessage ("hello player")
+			}
+			if (cmd[0] == "time" && (cmd[1] == "set" && (cmd[2] == "day"))) {
+				Level.setTime (0);
+				}
+			
+			if (cmd[0] == "i") {
+				itemId = cmd[1];
+				amount = cmd[2];
+				addItemInventory (itemId, amount)
+				}
+		}
